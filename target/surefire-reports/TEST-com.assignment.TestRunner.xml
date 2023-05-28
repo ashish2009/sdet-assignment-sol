@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.assignment.TestRunner" time="33.304" tests="66" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/amitabhkumar/Documents/ashish/sdet-assignment-sol/target/test-classes:/Users/amitabhkumar/Documents/ashish/sdet-assignment-sol/target/classes:/Users/amitabhkumar/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/amitabhkumar/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/amitabhkumar/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/amitabhkumar/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/amitabhkumar/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/amitabhkumar/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/amitabhkumar/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/amitabhkumar/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/amitabhkumar/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/amitabhkumar/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/amitabhkumar/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/amitabhkumar/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/amitabhkumar/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/amitabhkumar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/amitabhkumar/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/amitabhkumar/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/amitabhkumar/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/amitabhkumar/.m2/repository/io/rest-assured/json-schema-validator/4.4.0/json-schema-validator-4.4.0.jar:/Users/amitabhkumar/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/amitabhkumar/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/Users/amitabhkumar/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/amitabhkumar/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/amitabhkumar/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/Users/amitabhkumar/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/amitabhkumar/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/amitabhkumar/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/amitabhkumar/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.0/jackson-databind-2.11.0.jar:/Users/amitabhkumar/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.jar:/Users/amitabhkumar/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/amitabhkumar/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/amitabhkumar/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/amitabhkumar/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/amitabhkumar/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/amitabhkumar/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/amitabhkumar/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/amitabhkumar/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/amitabhkumar/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/amitabhkumar/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/amitabhkumar/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/cucumber-java/6.9.0/cucumber-java-6.9.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/cucumber-core/6.9.0/cucumber-core-6.9.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/cucumber-gherkin/6.9.0/cucumber-gherkin-6.9.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.0/cucumber-gherkin-messages-6.9.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/messages/13.2.0/messages-13.2.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/cucumber-plugin/6.9.0/cucumber-plugin-6.9.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/docstring/6.9.0/docstring-6.9.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/amitabhkumar/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/amitabhkumar/.m2/repository/tech/grasshopper/extentreports-cucumber6-adapter/2.14.3/extentreports-cucumber6-adapter-2.14.3.jar:/Users/amitabhkumar/.m2/repository/tech/grasshopper/extent-pdf-report/2.9.0/extent-pdf-report-2.9.0.jar:/Users/amitabhkumar/.m2/repository/tech/grasshopper/cucumber-pdf-report/2.11.0/cucumber-pdf-report-2.11.0.jar:/Users/amitabhkumar/.m2/repository/org/apache/pdfbox/pdfbox/2.0.26/pdfbox-2.0.26.jar:/Users/amitabhkumar/.m2/repository/org/apache/pdfbox/fontbox/2.0.26/fontbox-2.0.26.jar:/Users/amitabhkumar/.m2/repository/org/knowm/xchart/xchart/3.8.0/xchart-3.8.0.jar:/Users/amitabhkumar/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/amitabhkumar/.m2/repository/de/rototor/pdfbox/graphics2d/0.30/graphics2d-0.30.jar:/Users/amitabhkumar/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/amitabhkumar/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/Users/amitabhkumar/.m2/repository/tech/grasshopper/table-layout/1.5.1/table-layout-1.5.1.jar:/Users/amitabhkumar/.m2/repository/tech/grasshopper/rest-assured-cucumber-pdf-report/1.4.1/rest-assured-cucumber-pdf-report-1.4.1.jar:/Users/amitabhkumar/.m2/repository/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar:/Users/amitabhkumar/.m2/repository/com/aventstack/klov-reporter/5.0.9/klov-reporter-5.0.9.jar:/Users/amitabhkumar/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/amitabhkumar/.m2/repository/tech/grasshopper/htmlextentreporter/1.0.1/htmlextentreporter-1.0.1.jar:/Users/amitabhkumar/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/Users/amitabhkumar/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/cucumber-junit/6.9.0/cucumber-junit-6.9.0.jar:/Users/amitabhkumar/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/amitabhkumar/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/amitabhkumar/.m2/repository/com/aventstack/extentreports/5.0.4/extentreports-5.0.4.jar:/Users/amitabhkumar/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/amitabhkumar/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/amitabhkumar/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/amitabhkumar/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/amitabhkumar/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/amitabhkumar/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.3/jackson-core-2.12.3.jar:/Users/amitabhkumar/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar:/Users/amitabhkumar/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/amitabhkumar/.m2/repository/org/xerial/sqlite-jdbc/3.42.0.0/sqlite-jdbc-3.42.0.0.jar:/Users/amitabhkumar/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/cucumber-picocontainer/7.12.0/cucumber-picocontainer-7.12.0.jar:/Users/amitabhkumar/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/amitabhkumar/Documents/ashish/sdet-assignment-sol/target/surefire/surefirebooter8410557895583861295.jar /Users/amitabhkumar/Documents/ashish/sdet-assignment-sol/target/surefire 2023-05-28T19-16-49_101-jvmRun1 surefire2974066384426577148tmp surefire_05619087131175708737tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/amitabhkumar/Documents/ashish/sdet-assignment-sol/target/test-classes:/Users/amitabhkumar/Documents/ashish/sdet-assignment-sol/target/classes:/Users/amitabhkumar/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/amitabhkumar/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/amitabhkumar/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/amitabhkumar/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/amitabhkumar/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/amitabhkumar/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/amitabhkumar/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/amitabhkumar/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/amitabhkumar/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/amitabhkumar/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/amitabhkumar/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/amitabhkumar/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/amitabhkumar/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/amitabhkumar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/amitabhkumar/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/amitabhkumar/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/amitabhkumar/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/amitabhkumar/.m2/repository/io/rest-assured/json-schema-validator/4.4.0/json-schema-validator-4.4.0.jar:/Users/amitabhkumar/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/amitabhkumar/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/Users/amitabhkumar/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/amitabhkumar/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/amitabhkumar/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/Users/amitabhkumar/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/amitabhkumar/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/amitabhkumar/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/amitabhkumar/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.0/jackson-databind-2.11.0.jar:/Users/amitabhkumar/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.jar:/Users/amitabhkumar/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/amitabhkumar/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/amitabhkumar/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/amitabhkumar/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/amitabhkumar/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/amitabhkumar/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/amitabhkumar/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/amitabhkumar/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/amitabhkumar/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/amitabhkumar/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/amitabhkumar/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/cucumber-java/6.9.0/cucumber-java-6.9.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/cucumber-core/6.9.0/cucumber-core-6.9.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/cucumber-gherkin/6.9.0/cucumber-gherkin-6.9.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.0/cucumber-gherkin-messages-6.9.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/messages/13.2.0/messages-13.2.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/cucumber-plugin/6.9.0/cucumber-plugin-6.9.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/docstring/6.9.0/docstring-6.9.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/amitabhkumar/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/amitabhkumar/.m2/repository/tech/grasshopper/extentreports-cucumber6-adapter/2.14.3/extentreports-cucumber6-adapter-2.14.3.jar:/Users/amitabhkumar/.m2/repository/tech/grasshopper/extent-pdf-report/2.9.0/extent-pdf-report-2.9.0.jar:/Users/amitabhkumar/.m2/repository/tech/grasshopper/cucumber-pdf-report/2.11.0/cucumber-pdf-report-2.11.0.jar:/Users/amitabhkumar/.m2/repository/org/apache/pdfbox/pdfbox/2.0.26/pdfbox-2.0.26.jar:/Users/amitabhkumar/.m2/repository/org/apache/pdfbox/fontbox/2.0.26/fontbox-2.0.26.jar:/Users/amitabhkumar/.m2/repository/org/knowm/xchart/xchart/3.8.0/xchart-3.8.0.jar:/Users/amitabhkumar/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/amitabhkumar/.m2/repository/de/rototor/pdfbox/graphics2d/0.30/graphics2d-0.30.jar:/Users/amitabhkumar/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/amitabhkumar/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/Users/amitabhkumar/.m2/repository/tech/grasshopper/table-layout/1.5.1/table-layout-1.5.1.jar:/Users/amitabhkumar/.m2/repository/tech/grasshopper/rest-assured-cucumber-pdf-report/1.4.1/rest-assured-cucumber-pdf-report-1.4.1.jar:/Users/amitabhkumar/.m2/repository/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar:/Users/amitabhkumar/.m2/repository/com/aventstack/klov-reporter/5.0.9/klov-reporter-5.0.9.jar:/Users/amitabhkumar/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/amitabhkumar/.m2/repository/tech/grasshopper/htmlextentreporter/1.0.1/htmlextentreporter-1.0.1.jar:/Users/amitabhkumar/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/Users/amitabhkumar/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/cucumber-junit/6.9.0/cucumber-junit-6.9.0.jar:/Users/amitabhkumar/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/amitabhkumar/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/amitabhkumar/.m2/repository/com/aventstack/extentreports/5.0.4/extentreports-5.0.4.jar:/Users/amitabhkumar/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/amitabhkumar/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/amitabhkumar/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/amitabhkumar/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/amitabhkumar/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/amitabhkumar/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.3/jackson-core-2.12.3.jar:/Users/amitabhkumar/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar:/Users/amitabhkumar/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/amitabhkumar/.m2/repository/org/xerial/sqlite-jdbc/3.42.0.0/sqlite-jdbc-3.42.0.0.jar:/Users/amitabhkumar/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/Users/amitabhkumar/.m2/repository/io/cucumber/cucumber-picocontainer/7.12.0/cucumber-picocontainer-7.12.0.jar:/Users/amitabhkumar/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/amitabhkumar"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/amitabhkumar/Documents/ashish/sdet-assignment-sol"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/amitabhkumar/Documents/ashish/sdet-assignment-sol/target/surefire/surefirebooter8410557895583861295.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="user.name" value="amitabhkumar"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.16"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/amitabhkumar/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/7l/hhrmv33d2_qdvc3s705v8b5r0000gn/T/"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="user.dir" value="/Users/amitabhkumar/Documents/ashish/sdet-assignment-sol"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="dbPath" value="/Users/amitabhkumar/Documents/ashish/sdet-assignment"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/amitabhkumar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="java.ext.dirs" value="/Users/amitabhkumar/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="Post user insert api" classname="Verify user insertion with valid data in mandatory field" time="1.106">
+    <system-out><![CDATA[
+@ValidInsertion
+Scenario: Verify user insertion with valid data in mandatory field &amp#27;[90m# src/test/java/com/assignment/feature/UserInsertion.feature:4&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="provided valid header value" classname="Verify user insertion with valid data in mandatory field" time="0.018">
+    <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPost user insert api&amp#27;[0m                                       &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.post_user_insert_api()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="provided valid data in mandatory field (id &amp; phone_number)" classname="Verify user insertion with valid data in mandatory field" time="0.001">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mprovided valid header value&amp#27;[0m                                 &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.provided_valid_header_value()&amp#27;[0m
+{"phone_number":"6577264349","id":"4cd69dfb-743b-4ea6-ae19-bec02b18fd7a"}
+]]></system-out>
+  </testcase>
+  <testcase name="Status_code equals 200" classname="Verify user insertion with valid data in mandatory field" time="0.912">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprovided valid data in mandatory field (id & phone_number)&amp#27;[0m   &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.provided_valid_data_in_mandatory_field_id_phone_number()&amp#27;[0m
+Request method:	POST
+Request URI:	http://localhost:8080/api
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-session-token=authorized-user
+				user-agent=testing
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "phone_number": "6577264349",
+    "id": "4cd69dfb-743b-4ea6-ae19-bec02b18fd7a"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="validate response schema" classname="Verify user insertion with valid data in mandatory field" time="0.27">
+    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mStatus_code equals &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                      &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.status_code_equals(java.lang.Integer)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="&quot;message&quot; message is &quot;customer created&quot;" classname="Verify user insertion with valid data in mandatory field" time="0.021">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mvalidate response schema&amp#27;[0m                                     &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.validateResponseSchema()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="validate data in db" classname="Verify user insertion with valid data in mandatory field" time="0.005">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m"message"&amp#27;[0m&amp#27;[32m message is &amp#27;[0m&amp#27;[32m&amp#27;[1m"customer created"&amp#27;[0m                      &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.messageIs(java.lang.String,java.lang.String)&amp#27;[0m
+ID to query: 4cd69dfb-743b-4ea6-ae19-bec02b18fd7a
+]]></system-out>
+  </testcase>
+  <testcase name="validate sms_sent flag becomes 1 within 20 sec" classname="Verify user insertion with valid data in mandatory field" time="15.797">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mvalidate data in db&amp#27;[0m                                          &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.validate_data_in_db()&amp#27;[0m
+sms_sent: 1
+]]></system-out>
+  </testcase>
+  <testcase name="" classname="Verify user insertion with valid data in mandatory field" time="15.804">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mvalidate sms_sent flag becomes &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m within &amp#27;[0m&amp#27;[32m&amp#27;[1m20&amp#27;[0m&amp#27;[32m sec&amp#27;[0m               &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.validate_sms_sent_flag_becomes_within_sec(java.lang.Integer,java.lang.Integer)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Post user insert api" classname="Verify user insertion with valid data in mandatory &amp; optional field" time="0.053">
+    <system-out><![CDATA[
+@ValidInsertion
+Scenario: Verify user insertion with valid data in mandatory & optional field &amp#27;[90m# src/test/java/com/assignment/feature/UserInsertion.feature:15&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="provided valid header value" classname="Verify user insertion with valid data in mandatory &amp; optional field" time="0">
+    <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPost user insert api&amp#27;[0m                                                  &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.post_user_insert_api()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="provided valid data in optional field (name)" classname="Verify user insertion with valid data in mandatory &amp; optional field" time="0">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mprovided valid header value&amp#27;[0m                                            &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.provided_valid_header_value()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Status_code equals 200" classname="Verify user insertion with valid data in mandatory &amp; optional field" time="0.029">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprovided valid data in optional field (name)&amp#27;[0m                            &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.providedValidDataInOptionalFieldIdPhone_number()&amp#27;[0m
+Request method:	POST
+Request URI:	http://localhost:8080/api
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-session-token=authorized-user
+				user-agent=testing
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "AMTZVcuexI",
+    "phone_number": "2683530106",
+    "id": "5676017d-49f6-4e14-a3e0-fcb02986dbbb"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="validate response schema" classname="Verify user insertion with valid data in mandatory &amp; optional field" time="0.005">
+    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mStatus_code equals &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                                 &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.status_code_equals(java.lang.Integer)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="&quot;message&quot; message is &quot;customer created&quot;" classname="Verify user insertion with valid data in mandatory &amp; optional field" time="0.015">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mvalidate response schema&amp#27;[0m                                                &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.validateResponseSchema()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="validate data in db" classname="Verify user insertion with valid data in mandatory &amp; optional field" time="0">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m"message"&amp#27;[0m&amp#27;[32m message is &amp#27;[0m&amp#27;[32m&amp#27;[1m"customer created"&amp#27;[0m                                 &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.messageIs(java.lang.String,java.lang.String)&amp#27;[0m
+ID to query: 5676017d-49f6-4e14-a3e0-fcb02986dbbb
+]]></system-out>
+  </testcase>
+  <testcase name="validate sms_sent flag becomes 1 within 20 sec" classname="Verify user insertion with valid data in mandatory &amp; optional field" time="13.13">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mvalidate data in db&amp#27;[0m                                                     &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.validate_data_in_db()&amp#27;[0m
+sms_sent: 1
+]]></system-out>
+  </testcase>
+  <testcase name="" classname="Verify user insertion with valid data in mandatory &amp; optional field" time="13.132">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mvalidate sms_sent flag becomes &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m within &amp#27;[0m&amp#27;[32m&amp#27;[1m20&amp#27;[0m&amp#27;[32m sec&amp#27;[0m                          &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.validate_sms_sent_flag_becomes_within_sec(java.lang.Integer,java.lang.Integer)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Post user insert api" classname="Verify user insertion fails for duplicate user id" time="0.036">
+    <system-out><![CDATA[
+@InvalidInsertion
+Scenario: Verify user insertion fails for duplicate user id       &amp#27;[90m# src/test/java/com/assignment/feature/UserInsertion.feature:26&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="provided valid header value" classname="Verify user insertion fails for duplicate user id" time="0">
+    <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPost user insert api&amp#27;[0m                                      &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.post_user_insert_api()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="user id is already inserted" classname="Verify user insertion fails for duplicate user id" time="0.027">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mprovided valid header value&amp#27;[0m                                &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.provided_valid_header_value()&amp#27;[0m
+{"phone_number":"1734373941","id":"2712cf43-7e62-4fac-88df-e49d7bf14b41"}
+Request method:	POST
+Request URI:	http://localhost:8080/api
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-session-token=authorized-user
+				user-agent=testing
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "phone_number": "1734373941",
+    "id": "2712cf43-7e62-4fac-88df-e49d7bf14b41"
+}
+{"phone_number":"1734373941","id":"2712cf43-7e62-4fac-88df-e49d7bf14b41"}
+]]></system-out>
+  </testcase>
+  <testcase name="Status_code equals 500" classname="Verify user insertion fails for duplicate user id" time="0.024">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser id is already inserted&amp#27;[0m                                 &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.user_id_is_already_inserted()&amp#27;[0m
+Request method:	POST
+Request URI:	http://localhost:8080/api
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-session-token=authorized-user
+				user-agent=testing
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "phone_number": "1734373941",
+    "id": "2712cf43-7e62-4fac-88df-e49d7bf14b41"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="&quot;error&quot; message is &quot;UNIQUE constraint failed: customers.id&quot;" classname="Verify user insertion fails for duplicate user id" time="0.021">
+    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mStatus_code equals &amp#27;[0m&amp#27;[32m&amp#27;[1m500&amp#27;[0m                                     &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.status_code_equals(java.lang.Integer)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="" classname="Verify user insertion fails for duplicate user id" time="0.022">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m"error"&amp#27;[0m&amp#27;[32m message is &amp#27;[0m&amp#27;[32m&amp#27;[1m"UNIQUE constraint failed: customers.id"&amp#27;[0m &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.messageIs(java.lang.String,java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Post user insert api" classname="Verify user insertion fails if x-session-token is missing" time="0.033">
+    <system-out><![CDATA[
+@InvalidInsertion
+Scenario: Verify user insertion fails if x-session-token is missing &amp#27;[90m# src/test/java/com/assignment/feature/UserInsertion.feature:34&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="&quot;x-session-token&quot; is missing" classname="Verify user insertion fails if x-session-token is missing" time="0">
+    <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPost user insert api&amp#27;[0m                                        &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.post_user_insert_api()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="provided valid data in mandatory field (id &amp; phone_number)" classname="Verify user insertion fails if x-session-token is missing" time="0">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m"x-session-token"&amp#27;[0m&amp#27;[32m is missing&amp#27;[0m                                 &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.is_missing(java.lang.String)&amp#27;[0m
+{"phone_number":"9998063414","id":"57cbb54c-5793-42b0-8556-de3e2acc1e46"}
+]]></system-out>
+  </testcase>
+  <testcase name="Status_code equals 403" classname="Verify user insertion fails if x-session-token is missing" time="0.009">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprovided valid data in mandatory field (id & phone_number)&amp#27;[0m    &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.provided_valid_data_in_mandatory_field_id_phone_number()&amp#27;[0m
+Request method:	POST
+Request URI:	http://localhost:8080/api
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		user-agent=testing
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "phone_number": "9998063414",
+    "id": "57cbb54c-5793-42b0-8556-de3e2acc1e46"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="&quot;error&quot; message is &quot;request cannot be authenticated!&quot;" classname="Verify user insertion fails if x-session-token is missing" time="0.02">
+    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mStatus_code equals &amp#27;[0m&amp#27;[32m&amp#27;[1m403&amp#27;[0m                                       &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.status_code_equals(java.lang.Integer)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="" classname="Verify user insertion fails if x-session-token is missing" time="0.02">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m"error"&amp#27;[0m&amp#27;[32m message is &amp#27;[0m&amp#27;[32m&amp#27;[1m"request cannot be authenticated!"&amp#27;[0m         &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.messageIs(java.lang.String,java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Post user insert api" classname="Verify user insertion fails if mandatory field is missing" time="0.037">
+    <system-out><![CDATA[
+@InvalidInsertion
+Scenario: Verify user insertion fails if mandatory field is missing      &amp#27;[90m# src/test/java/com/assignment/feature/UserInsertion.feature:42&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="provided valid header value" classname="Verify user insertion fails if mandatory field is missing" time="0">
+    <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPost user insert api&amp#27;[0m                                             &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.post_user_insert_api()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="&quot;id&quot; is missing" classname="Verify user insertion fails if mandatory field is missing" time="0">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mprovided valid header value&amp#27;[0m                                       &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.provided_valid_header_value()&amp#27;[0m
+{"phone_number":"1279240870","id":""}
+]]></system-out>
+  </testcase>
+  <testcase name="Status_code equals 400" classname="Verify user insertion fails if mandatory field is missing" time="0.011">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m"id"&amp#27;[0m&amp#27;[32m is missing&amp#27;[0m                                                    &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.is_missing(java.lang.String)&amp#27;[0m
+Request method:	POST
+Request URI:	http://localhost:8080/api
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-session-token=authorized-user
+				user-agent=testing
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "phone_number": "1279240870",
+    "id": ""
+}
+]]></system-out>
+  </testcase>
+  <testcase name="&quot;error&quot; message is &quot;&apos;Customer.ID&apos; Error:Field validation for &apos;ID&apos;&quot;" classname="Verify user insertion fails if mandatory field is missing" time="0.017">
+    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mStatus_code equals &amp#27;[0m&amp#27;[32m&amp#27;[1m400&amp#27;[0m                                            &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.status_code_equals(java.lang.Integer)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="" classname="Verify user insertion fails if mandatory field is missing" time="0.019">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m"error"&amp#27;[0m&amp#27;[32m message is &amp#27;[0m&amp#27;[32m&amp#27;[1m"'Customer.ID' Error:Field validation for 'ID'"&amp#27;[0m &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.messageIs(java.lang.String,java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Post user insert api" classname="Verify user insertion fails with invalid header value #1" time="0.037">
+    <system-out><![CDATA[
+@InvalidInsertion
+Scenario Outline: Verify user insertion fails with invalid header value &amp#27;[90m# src/test/java/com/assignment/feature/UserInsertion.feature:59&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="x-session-token is null and user-agent is testing in header" classname="Verify user insertion fails with invalid header value #1" time="0.001">
+    <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPost user insert api&amp#27;[0m                                            &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.post_user_insert_api()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="provided valid data in mandatory field (id &amp; phone_number)" classname="Verify user insertion fails with invalid header value #1" time="0">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mx-session-token is &amp#27;[0m&amp#27;[32m&amp#27;[1mnull&amp#27;[0m&amp#27;[32m and user-agent is &amp#27;[0m&amp#27;[32m&amp#27;[1mtesting&amp#27;[0m&amp#27;[32m in header&amp#27;[0m      &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.xsessiontoken_is_and_useragent_is_in_header(java.lang.String,java.lang.String)&amp#27;[0m
+{"phone_number":"8751161735","id":"c1e1be8f-c117-4666-8a64-feada8895d51"}
+]]></system-out>
+  </testcase>
+  <testcase name="Status_code equals 403" classname="Verify user insertion fails with invalid header value #1" time="0.009">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprovided valid data in mandatory field (id & phone_number)&amp#27;[0m        &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.provided_valid_data_in_mandatory_field_id_phone_number()&amp#27;[0m
+Request method:	POST
+Request URI:	http://localhost:8080/api
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-session-token=null
+				user-agent=testing
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "phone_number": "8751161735",
+    "id": "c1e1be8f-c117-4666-8a64-feada8895d51"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="error message is request cannot be authenticated!" classname="Verify user insertion fails with invalid header value #1" time="0.015">
+    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mStatus_code equals &amp#27;[0m&amp#27;[32m&amp#27;[1m403&amp#27;[0m                                           &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.status_code_equals(java.lang.Integer)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="" classname="Verify user insertion fails with invalid header value #1" time="0.016">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32merror message is &amp#27;[0m&amp#27;[32m&amp#27;[1mrequest cannot be authenticated!&amp#27;[0m                 &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.error_message_is(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Post user insert api" classname="Verify user insertion fails with invalid header value #2" time="0.039">
+    <system-out><![CDATA[
+@InvalidInsertion
+Scenario Outline: Verify user insertion fails with invalid header value           &amp#27;[90m# src/test/java/com/assignment/feature/UserInsertion.feature:60&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="x-session-token is authorized-user and user-agent is testing-bot in header" classname="Verify user insertion fails with invalid header value #2" time="0">
+    <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPost user insert api&amp#27;[0m                                                      &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.post_user_insert_api()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="provided valid data in mandatory field (id &amp; phone_number)" classname="Verify user insertion fails with invalid header value #2" time="0">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mx-session-token is &amp#27;[0m&amp#27;[32m&amp#27;[1mauthorized-user&amp#27;[0m&amp#27;[32m and user-agent is &amp#27;[0m&amp#27;[32m&amp#27;[1mtesting-bot&amp#27;[0m&amp#27;[32m in header&amp#27;[0m &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.xsessiontoken_is_and_useragent_is_in_header(java.lang.String,java.lang.String)&amp#27;[0m
+{"phone_number":"7550849299","id":"63b8836c-5a7c-4a97-bfcf-0f0bdfda0514"}
+]]></system-out>
+  </testcase>
+  <testcase name="Status_code equals 400" classname="Verify user insertion fails with invalid header value #2" time="0.013">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mprovided valid data in mandatory field (id & phone_number)&amp#27;[0m                  &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.provided_valid_data_in_mandatory_field_id_phone_number()&amp#27;[0m
+Request method:	POST
+Request URI:	http://localhost:8080/api
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-session-token=authorized-user
+				user-agent=testing-bot
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "phone_number": "7550849299",
+    "id": "63b8836c-5a7c-4a97-bfcf-0f0bdfda0514"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="error message is bad bot, go away!" classname="Verify user insertion fails with invalid header value #2" time="0.016">
+    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mStatus_code equals &amp#27;[0m&amp#27;[32m&amp#27;[1m400&amp#27;[0m                                                     &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.status_code_equals(java.lang.Integer)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="" classname="Verify user insertion fails with invalid header value #2" time="0.017">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32merror message is &amp#27;[0m&amp#27;[32m&amp#27;[1mbad bot, go away!&amp#27;[0m                                          &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.error_message_is(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Post user insert api" classname="Verify user insertion fails with invalid value in payload #1" time="0.033">
+    <system-out><![CDATA[
+@InvalidInsertion
+Scenario Outline: Verify user insertion fails with invalid value in payload &amp#27;[90m# src/test/java/com/assignment/feature/UserInsertion.feature:72&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="provided valid header value" classname="Verify user insertion fails with invalid value in payload #1" time="0">
+    <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPost user insert api&amp#27;[0m                                                &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.post_user_insert_api()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="name is ashis@h and phone_number is 9977880022 in payload" classname="Verify user insertion fails with invalid value in payload #1" time="0">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mprovided valid header value&amp#27;[0m                                          &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.provided_valid_header_value()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Status_code equals 400" classname="Verify user insertion fails with invalid value in payload #1" time="0.011">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mname is &amp#27;[0m&amp#27;[32m&amp#27;[1mashis@h&amp#27;[0m&amp#27;[32m and phone_number is &amp#27;[0m&amp#27;[32m&amp#27;[1m9977880022&amp#27;[0m&amp#27;[32m in payload&amp#27;[0m             &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.name_is_and_phonenumber_is_in_payload(java.lang.String,java.lang.String)&amp#27;[0m
+Request method:	POST
+Request URI:	http://localhost:8080/api
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-session-token=authorized-user
+				user-agent=testing
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "ashis@h",
+    "phone_number": "9977880022",
+    "id": "a3bedd87-d581-4f94-b98f-c4fdd3b65e25"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="error message is name has special characters" classname="Verify user insertion fails with invalid value in payload #1" time="0.019">
+    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mStatus_code equals &amp#27;[0m&amp#27;[32m&amp#27;[1m400&amp#27;[0m                                               &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.status_code_equals(java.lang.Integer)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="" classname="Verify user insertion fails with invalid value in payload #1" time="0.019">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32merror message is &amp#27;[0m&amp#27;[32m&amp#27;[1mname has special characters&amp#27;[0m                          &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.error_message_is(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Post user insert api" classname="Verify user insertion fails with invalid value in payload #2" time="0.029">
+    <system-out><![CDATA[
+@InvalidInsertion
+Scenario Outline: Verify user insertion fails with invalid value in payload &amp#27;[90m# src/test/java/com/assignment/feature/UserInsertion.feature:73&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="provided valid header value" classname="Verify user insertion fails with invalid value in payload #2" time="0.001">
+    <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPost user insert api&amp#27;[0m                                                &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.post_user_insert_api()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="name is ashish and phone_number is 997788002211 in payload" classname="Verify user insertion fails with invalid value in payload #2" time="0">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mprovided valid header value&amp#27;[0m                                          &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.provided_valid_header_value()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Status_code equals 500" classname="Verify user insertion fails with invalid value in payload #2" time="0.008">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mname is &amp#27;[0m&amp#27;[32m&amp#27;[1mashish&amp#27;[0m&amp#27;[32m and phone_number is &amp#27;[0m&amp#27;[32m&amp#27;[1m997788002211&amp#27;[0m&amp#27;[32m in payload&amp#27;[0m            &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.name_is_and_phonenumber_is_in_payload(java.lang.String,java.lang.String)&amp#27;[0m
+Request method:	POST
+Request URI:	http://localhost:8080/api
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-session-token=authorized-user
+				user-agent=testing
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "ashish",
+    "phone_number": "997788002211",
+    "id": "bd1a54d4-ee44-4dcc-90bd-5e3b1bc074b4"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="error message is CHECK constraint failed: length(phone_number) = 10" classname="Verify user insertion fails with invalid value in payload #2" time="0.012">
+    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mStatus_code equals &amp#27;[0m&amp#27;[32m&amp#27;[1m500&amp#27;[0m                                               &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.status_code_equals(java.lang.Integer)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="" classname="Verify user insertion fails with invalid value in payload #2" time="0.013">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32merror message is &amp#27;[0m&amp#27;[32m&amp#27;[1mCHECK constraint failed: length(phone_number) = 10&amp#27;[0m   &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.error_message_is(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Post user insert api" classname="Verify user insertion fails with invalid value in payload #3" time="0.027">
+    <system-out><![CDATA[
+@InvalidInsertion
+Scenario Outline: Verify user insertion fails with invalid value in payload &amp#27;[90m# src/test/java/com/assignment/feature/UserInsertion.feature:74&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="provided valid header value" classname="Verify user insertion fails with invalid value in payload #3" time="0">
+    <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPost user insert api&amp#27;[0m                                                &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.post_user_insert_api()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="name is ashish and phone_number is 997788002 in payload" classname="Verify user insertion fails with invalid value in payload #3" time="0">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mprovided valid header value&amp#27;[0m                                          &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.provided_valid_header_value()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Status_code equals 500" classname="Verify user insertion fails with invalid value in payload #3" time="0.01">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mname is &amp#27;[0m&amp#27;[32m&amp#27;[1mashish&amp#27;[0m&amp#27;[32m and phone_number is &amp#27;[0m&amp#27;[32m&amp#27;[1m997788002&amp#27;[0m&amp#27;[32m in payload&amp#27;[0m               &amp#27;[90m# com.assignment.steps.UserInsertStepDefination.name_is_and_phonenumber_is_in_payload(java.lang.String,java.lang.String)&amp#27;[0m
+Request method:	POST
+Request URI:	http://localhost:8080/api
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-session-token=authorized-user
+				user-agent=testing
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "ashish",
+    "phone_number": "997788002",
+    "id": "baebf45d-b0f8-4885-9ec7-9f629ff1d7bb"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="error message is CHECK constraint failed: length(phone_number) = 10" classname="Verify user insertion fails with invalid value in payload #3" time="0.012">
+    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mStatus_code equals &amp#27;[0m&amp#27;[32m&amp#27;[1m500&amp#27;[0m                                               &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.status_code_equals(java.lang.Integer)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="" classname="Verify user insertion fails with invalid value in payload #3" time="0.012">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32merror message is &amp#27;[0m&amp#27;[32m&amp#27;[1mCHECK constraint failed: length(phone_number) = 10&amp#27;[0m   &amp#27;[90m# com.assignment.steps.UserInsertValidationStep.error_message_is(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>

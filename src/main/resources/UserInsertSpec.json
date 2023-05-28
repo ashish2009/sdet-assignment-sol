@@ -1,0 +1,23 @@
+[
+  {
+    "user-insert": {
+      "path": "/api",
+      "method": "post",
+      "headers": {
+        "x-session-token": "authorized-user",
+        "user-agent": "testing",
+        "Content-Type": "application/json"
+      },
+      "mandatoryBody": {
+        "id": "${id}",
+        "phone_number": "${phone_number}"
+      },
+      "optionalBody": {
+        "id": "${id}",
+        "name": "${name}",
+        "phone_number": "${phone_number}"
+      },
+      "dbQuery": "select * from customers where id=${id}"
+    }
+  }
+]

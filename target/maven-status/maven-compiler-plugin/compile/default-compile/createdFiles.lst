@@ -1,0 +1,10 @@
+com/assignment/pojo/Request.class
+com/assignment/utils/DBUtil.class
+com/assignment/UserInsertConstant.class
+com/assignment/utils/SpecReaderUtil.class
+com/assignment/utils/ApiTestContext.class
+com/assignment/pojo/Request$RequestBuilder.class
+com/assignment/utils/ApiSpec.class
+com/assignment/utils/ConnectionUtil.class
+com/assignment/utils/SpecReaderUtil$1.class
+com/assignment/utils/PropertyReader.class
